@@ -1,0 +1,27 @@
+*{margin: 0;
+padding: 0;
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+}
+.prev{
+    cursor: pointer;
+    width: auto;
+    position: absolute;
+    top: 50vh;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.next{
+    cursor: pointer;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    top: 50vh;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px;
+}
