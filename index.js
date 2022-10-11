@@ -1,21 +1,31 @@
-let nextbtn = document.querySelector('.next')
-let prevbtn = document.querySelector('.prev')
+let i = 1;
+let slider = document.querySelectorAll('slides'); 
+next=document.getElementById("next")
+prev=document.getElementById("prev")
 
+next.addEventListener('click',function () {
+    i++;
+    if (i>4) {
+        i=4;
+        image.src=`./images/image${i}.jpg`;
 
+    } else {
+        image.src=`./images/image${i}.jpg`;
+    }
+    
+});
 
-let i = 0;
-var slider = document.getElementsByClassName("slide"); 
+prev.addEventListener('click',function () {
+    i--;
+    
+    if (i<=0) {
+        i=1;
+        image.src=`./images/image${i}.jpg`;   
 
-nextbtn.addEventListener("click",function () {
-    slider[i];
-})
+    } else {
+        image.src=`./images/image${i}.jpg`;   
 
+    }
+    
+});
 
-// prevButton.addEventListener("click",function () {
-//   i--
-//   if(i<0){
-//     i = 4;
-//   }
-//   document.getElementById("img").setAttributeNS(null,"src",list[i])
-  
-// })

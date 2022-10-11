@@ -3,25 +3,34 @@ padding: 0;
 }
 
 img{
-    width: 100vw;
-    height: 100vh;
+    margin-left: 4%;
+    margin-top: 2.5%;
+    width: 90vw;
+    height: 90vh;
 }
-.prev{
+#prev{
     cursor: pointer;
     width: auto;
     position: absolute;
     top: 50vh;
-    background-color: white;
+    left: 2%;
+    background-color: rgb(39, 220, 227);
     font-weight: bold;
     padding: 10px;
 }
-.next{
+#next{
     cursor: pointer;
     width: auto;
     position: absolute;
-    right: 0px;
+    right: 3%;
     top: 50vh;
-    background-color: white;
+    background-color:rgb(39, 220, 227);
     font-weight: bold;
     padding: 10px;
+}
+#next:hover{
+    background-color: red;
+}
+#prev:hover{
+    background-color: red;
 }
